@@ -1,13 +1,11 @@
 public class Main {
     public static void main(String[] args) {
 
-        String[] nameArray = {"Kadir","Gökhan","Hakan","Suzan","Pınar","Mehmet","Ali","Emel","Fırat","James","Jale","Ersin","Deniz","Gözde","Anıl","Burak" };
-        int[] minuteArray = {341,273,278,329,445,402,388,270,243,334,412,393,299,343,317,265};
+        int[] gradesArray = {87,68,94,100,83,78,85,91,76,87,25};
 
-        Contestant contestants = new Contestant(nameArray, minuteArray);
-
-        contestants.thirdContestant();
-        contestants.classifyContestants();
-
+        GradeBook myGradeBook = new GradeBook("Programlama" , gradesArray);
+        myGradeBook.displayMessage();
+        myGradeBook.processGrades();
+        myGradeBook.outpuBarChart();
     }
 }
